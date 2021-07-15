@@ -1,0 +1,88 @@
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/HindSiliguri-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15pt;
+    background-color: #5F65A9;
+    
+}
+.top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+}
+.top input{
+    display: block;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    font-weight: 900;
+    color: red;
+    font-size: 30px;
+    box-shadow: 3px -3px 15px #838BDB;
+}
+.top button{
+    border: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: coral;
+    border-radius:  4px;
+    color:white;
+    font-family: myFirstFont;
+}
+.top button:hover{
+    background-color:  #EEA33F;
+    transition:.3s;
+}
+
+.content{
+    background-color: white;
+    height: 70vh;
+    width: 80%;
+    margin:60px auto 0;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 25%;
+    border-radius: 10px;
+    box-shadow: 5px 3px 40px #E2DDD6;
+    
+    
+    
+}
+p{
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+    
+font-family: 'Patrick Hand', cursive;
+}
+
+@media(min-width:500px){
+   .content{
+       padding-left :25% ;
+       
+   }
+    p{
+        font-size: 40px;
+        line-height: 60px;
+    }
+}
